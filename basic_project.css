@@ -1,0 +1,411 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Style Script', cursive;
+}
+
+header{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,.cart,.nav-links{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+
+nav{
+    flex: 2;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.Presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.Presentation .introduction{
+    flex: 1;
+}
+
+.Presentation .intro_text h1{
+    font-size: 65px;
+    font-weight: 500;
+    background: linear-gradient(to right, rgba(145, 123, 0, 0.39), rgba(151, 1, 1, 0.39));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Presentation .intro_text p{
+    margin-top: 5px;
+    font-size: 30px;
+    color: teal;
+}
+
+.Presentation .cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.Presentation .cover img{
+    height: 100%;
+    animation: drop 1.5s ease;
+}
+
+.Presentation .introduction .cta{
+    padding-top: 50px;
+}
+
+.Presentation .introduction .cta_select{
+    border: 2px solid rgb(0, 102, 102);
+    background: transparent;
+    color: black;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.Presentation .introduction .cta_add{
+    border: none;
+    background:  rgb(0, 102, 102);
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 30px 0px 0px 30px;
+}
+
+.big_circle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 80%;
+}
+
+.mid_circle{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.3;
+    height: 60%;
+}
+
+.small_circle{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+.shoe_select{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20%;
+}
+
+.slides{
+    margin: 50px;
+    padding: 0;
+    height: 200vh;
+    width: 200vh;
+    font-family: 'Amatic SC', cursive;
+  }
+  
+   .slides .block{
+      width: 200vh;
+      height: 143vh;
+      position: relative;
+      overflow: hidden;
+      font-size: 16px;
+    }
+    .slides .block h2{
+      position: relative;
+      display: block;
+      text-align: center;
+      margin: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 10vw;
+      color: white;
+      font-weight: 400;
+    }
+    .slides .block .img-parallax {
+      width: 100vmax;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,0);
+      pointer-events: none
+    }
+
+
+
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform: translate(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.Semi_intro {
+    max-height: 200px;;
+    background-color: #292c2f;
+    color: white;
+    font-size: 38pt;
+    text-align: center;
+    line-height: 200px;
+    width: 100vh;
+   }
+
+   .footer{
+    position: relative;
+    display: flex;
+    width: 100vh;
+   }
+   .footer-distributed{
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100vh;
+    text-align: left;
+    font: bold 16px sans-serif;
+    
+    padding: 55px 50px;
+    margin-top: 80px;
+   }
+
+   .footer-distributed .footer-left .my_img{
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
+
+   .footer-distributed .footer-left,
+   .footer-distributed .footer-center,
+   .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+   }
+    
+   .footer-distributed .footer-left{
+    width: 40%;
+   }
+    
+   .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+   }
+    
+   .footer-distributed h3 span{
+    color:  #5383d3;
+   }
+    
+    
+   .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+   }
+    
+   .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+   }
+    
+   .footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+   }
+    
+    
+   .footer-distributed .footer-center{
+    width: 35%;
+   }
+    
+   .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+   }
+    
+   .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+   }
+    
+   .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+   }
+    
+   .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+   }
+    
+   .footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+   }
+    
+   .footer-distributed .footer-right{
+    width: 20%;
+   }
+    
+   .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+   }
+    
+   .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+   }
+    
+   .footer-distributed .footer-icons{
+    margin-top: 25px;
+   }
+    
+   .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+    
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    
+    margin-right: 3px;
+    margin-bottom: 5px;
+   }
+    
+    
+   @media (max-width: 1024px) {
+    
+    .footer-distributed{
+    font: bold 14px sans-serif;
+    
+    }
+    
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+    
+    .footer-distributed .footer-center i{
+    margin-left: 0;
+    }
+    .Semi_intro {
+    line-height: normal;
+    font-size: auto;
+    }
+
+    .Presentation{
+        flex-direction: column;
+    }
+    .Presentation.introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro_text h1 {
+        font-size: 30px;
+    }
+    .intro_text p {
+        font-size: 18px;
+    }
+    .cta{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .shoe_select{
+        bottom: 5%;
+        right: 50%;
+        width: 50%;
+        transform: translate(50%,5%);
+    }
+    .cover img{
+        height: 80%;
+    }
+    .small_circle,
+    .mid_circle,
+    .big_circle{
+        opacity: 0.2;
+    }
+    
+   }
