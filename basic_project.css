@@ -193,6 +193,10 @@ nav{
     }
 }
 
+.slides .Animation { 
+    background-image: url("./Images/mountains_behind.png"), url("./Images/mountains_front.png"), url("./Images/layer_by_layer.png");
+}
+
 .Semi_intro {
     max-height: 200px;;
     background-color: #292c2f;
